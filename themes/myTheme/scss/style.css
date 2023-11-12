@@ -74,7 +74,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -314,33 +315,22 @@ body {
 }
 
 * {
-  color: #333;
   font-family: "Oswald", sans-serif;
+  color: #333;
 }
 
 .footer {
-  align-items: center;
   background-color: #e4e4e4;
+  padding: 30px;
   color: #333;
   display: flex;
   font-size: 32px;
   justify-content: space-between;
-  padding: 30px;
+  align-items: center;
 }
 
 .main {
-  margin: 0 30rem;
-}
-
-.logo img {
-  height: 10rem;
-  max-width: 100%;
-  width: 10rem;
-}
-
-.title a {
-  color: inherit;
-  text-decoration: none;
+  margin: 0rem 30rem;
 }
 
 .header {
@@ -349,26 +339,36 @@ body {
   padding: 10px;
 }
 .header .site-header {
-  align-items: center;
+  margin: 0rem 30rem;
   display: flex;
   justify-content: space-between;
-  margin: 0 30rem;
+  align-items: center;
 }
-
-.nav ul {
+.header .logo img {
+  max-width: 100%;
+  width: 10rem;
+  height: 10rem;
+}
+.header .title a {
+  color: inherit;
+  text-decoration: none;
+}
+.header .nav ul {
   background-color: #699169;
   color: #e4e4e4;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
-
-li a {
+.header .nav li a {
   color: #e4e4e4;
   text-decoration: none;
   transition: color 0.3s;
+}
+.header .nav li a:hover {
+  color: #76577c;
 }
 
 img {
@@ -377,38 +377,38 @@ img {
 }
 
 blockquote {
-  border-left: 0.5em solid #f5f5f5;
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
+  border-left: 0.5em solid #f5f5f5;
 }
 
 code {
-  background: #f5f5f5;
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
+  background: #f5f5f5;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
-  margin: 0 0.1em;
-  padding: 0.1em 0.2em;
 }
 
 pre {
-  background: #f5f5f5;
+  padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  padding: 0 1em;
+  background: #f5f5f5;
 }
 
 pre code {
-  background: transparent;
-  border: 0 none;
   display: block;
-  line-height: 1.4;
   margin: 0;
-  overflow-x: auto;
   padding: 1.1111em 0;
+  border: 0 none;
+  background: transparent;
+  overflow-x: auto;
+  line-height: 1.4;
 }
 
 /*!
@@ -6523,4 +6523,4 @@ readers do not read off random characters that represent icons */
 .far {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
-}
+}/*# sourceMappingURL=style.css.map */

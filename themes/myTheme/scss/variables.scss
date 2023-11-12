@@ -1,0 +1,27 @@
+$font-color: #333;
+$font-alternative-color: #fff;
+$accent-color-main: #76577c;
+$accent-color-second: #699169;
+$background-color: #faf9f8;
+$header-footer-background-color: #e4e4e4;
+$background-alternative-color: #d1c9c2;
+$width: 30rem;
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    color: $font-color;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer {
+    align-items: center;
+    background-color: $header-footer-background-color;
+    color: $font-color;
+    display: flex;
+    font-size: 32px;
+    justify-content: space-between;
+    padding: 30px;
+}

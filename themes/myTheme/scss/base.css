@@ -1,0 +1,46 @@
+.main {
+  margin: 0rem 30rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-color: #e4e4e4;
+  color: #333;
+  padding: 10px;
+}
+.header .site-header {
+  margin: 0rem 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo img {
+  max-width: 100%;
+  width: 10rem;
+  height: 10rem;
+}
+.header .title a {
+  color: inherit;
+  text-decoration: none;
+}
+.header .nav ul {
+  background-color: purple;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+.header .nav li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header .nav li a:hover {
+  color: red;
+}
+
+img {
+  max-height: 20rem;
+  max-width: 20rem;
+}/*# sourceMappingURL=base.css.map */

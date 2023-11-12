@@ -23,16 +23,6 @@
 }
 
 @media (max-width: 767px) {
-      img {
-        display: none;
-        -webkit-display: none;
-    -moz-display: none;
-    -ms-display: none;
-    -o-display: none;
-    }
-    .main{
-        all: initial;
-    }
     .header {
         flex-direction: column;
     }
