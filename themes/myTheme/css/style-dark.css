@@ -311,11 +311,11 @@ template {
 }
 
 body {
-  background-color: #e6f0ec;
+  background-color: #444;
 }
 
 * {
-  color: #2e4d3c;
+  color: #96be95;
   font-family: "Oswald", sans-serif;
 }
 
@@ -335,8 +335,8 @@ body {
 }
 
 .header {
-  background-color: #7AA394;
-  color: #2e4d3c;
+  background-color: #444;
+  color: #96be95;
   padding: 10px;
 }
 .header .site-header {
@@ -347,8 +347,8 @@ body {
 }
 
 .nav ul {
-  background-color: #7ba27a;
-  color: #fff;
+  background-color: #2a2a2a;
+  color: #a2cfa1;
   display: flex;
   gap: 20px;
   list-style: none;
@@ -357,7 +357,7 @@ body {
 }
 
 li a {
-  color: #fff;
+  color: #a2cfa1;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -369,8 +369,8 @@ img {
 
 .footer {
   align-items: center;
-  background-color: #7ba27a;
-  color: #2e4d3c;
+  background-color: #2a2a2a;
+  color: #96be95;
   display: flex;
   font-size: 32px;
   justify-content: space-between;

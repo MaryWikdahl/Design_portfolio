@@ -27,27 +27,29 @@
 }
 
 .landingpage :nth-child(2) {
-    background-color: #d2f2d0;
+    background-color: #72b56c;
     grid-column: span 3;
 }
   
 .landingpage :nth-child(3) {
-    background-color: #c0ebbf;
-    grid-column: span 1;
-}
-  
-.landingpage :nth-child(4) {
-    background-color: #b0e0af;
-    grid-column: span 2;
-}
-  
-.landingpage :nth-child(5) {
     background-color: #a1d69e;
     grid-column: span 1;
 }
   
-.landingpage :nth-child(6) {
+.landingpage :nth-child(4) {
     background-color: #92cb8d;
+    
+    grid-column: span 2;
+}
+  
+.landingpage :nth-child(5) {
+  
+    background-color: #c0ebbf;
+    grid-column: span 1;
+}
+  
+.landingpage :nth-child(6) {
+    background-color: #b0e0af;
     grid-column: span 2;
 }
 
@@ -57,7 +59,8 @@
 }
 
 .landingpage :nth-child(8) {
-    background-color: #72b56c;
+   
+    background-color: #d2f2d0;
     grid-column: span 1;
 }
 
