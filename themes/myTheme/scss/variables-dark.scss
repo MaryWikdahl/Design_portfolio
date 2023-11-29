@@ -57,6 +57,12 @@ body {
     }
 }
 
+.nav {
+    a {
+        color: $font-color !important;
+    }
+}
+
 li {
     a {
         color: $font-alternative-color;
@@ -78,4 +84,35 @@ img {
     font-size: 32px;
     justify-content: space-between;
     padding: 30px;
+}
+
+code {
+    background: $font-color;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    color: $background-alternative-color;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
+}
+
+pre {
+    
+    background: $font-color;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    color: $background-alternative-color;
+    padding: 0 1em;
+}
+
+pre code {
+    background: transparent;
+    border: 0 none;
+    display: block;
+    line-height: 1.4;
+    margin: 0;
+    overflow-x: auto;
+    padding: 1.1111em 0;
 }
