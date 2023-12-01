@@ -1,0 +1,123 @@
+.gallery {
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-bottom: 10rem;
+    padding: 20px;
+}
+
+.main {
+    margin: 0 30rem;
+}
+
+.gallery :nth-child(1) {
+    grid-column: span 3;
+}
+
+.gallery :nth-child(2) {
+    grid-column: span 1;
+}
+  
+.gallery :nth-child(3) {
+    grid-column: span 1;
+}
+  
+.gallery :nth-child(4) {
+    grid-column: span 1;
+}
+  
+.gallery :nth-child(5) {
+    grid-column: span 1;
+}
+  
+.gallery :nth-child(6) {
+    grid-column: span 1;
+}
+
+.embed-container { 
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media (max-width: 1600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flash-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery :nth-child(1) {
+        grid-column: span 1;
+    }
+    
+    .gallery :nth-child(2) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(3) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(4) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(5) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(6) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 1150px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flash-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .gallery :nth-child(1) {
+        grid-column: span 1;
+    }
+    
+    .gallery :nth-child(2) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(3) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(4) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(5) {
+        grid-column: span 1;
+    }
+      
+    .gallery :nth-child(6) {
+        grid-column: span 1;
+    }
+
+}

@@ -4,6 +4,13 @@ $background-color: #444;
 $header-footer-background-color: #2a2a2a;
 $background-alternative-color: #444;
 
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
 body {
     background-color: $background-color;
 }
