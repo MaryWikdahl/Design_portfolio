@@ -28,39 +28,44 @@
 
 .landingpage :nth-child(2) {
     background-color: #72b56c;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 3;
 }
   
 .landingpage :nth-child(3) {
     background-color: #a1d69e;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 1;
 }
-  
+ 
 .landingpage :nth-child(4) {
     background-color: #92cb8d;
-    
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 2;
+   
 }
   
 .landingpage :nth-child(5) {
-  
     background-color: #c0ebbf;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 1;
 }
   
 .landingpage :nth-child(6) {
     background-color: #b0e0af;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 2;
 }
 
 .landingpage :nth-child(7) {
     background-color: #c0ebbf;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 2;
 }
 
 .landingpage :nth-child(8) {
-   
     background-color: #d2f2d0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     grid-column: span 1;
 }
 
@@ -112,6 +117,6 @@
         border-bottom: solid 2px #33333318;
         justify-self: center;
         padding-bottom: 1.3rem;
-        text-align: center;    
+        text-align: center;
     }
 }

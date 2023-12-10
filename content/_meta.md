@@ -1,5 +1,5 @@
 ---
-Logo: image/me.jpeg
+Logo: image/sol.png
 Tagline: 
 icon: fas fa-snowflake
 Social:

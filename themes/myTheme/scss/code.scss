@@ -1,5 +1,5 @@
 code {
-    background: #7aa394;
+    background: #304940;
     border: 1px solid #ccc;
     border-radius: 0.3em;
     color: #fff;
@@ -20,11 +20,22 @@ pre {
 }
 
 pre code {
-    background: transparent;
+    background: #304940;
     border: 0 none;
     display: block;
     line-height: 1.4;
     margin: 0;
     overflow-x: auto;
     padding: 1.1111em 0;
+}
+
+li > a:visited {
+    color: #551A8B;
+}
+li > a:link {
+    color: #0000EE;
+}
+
+strong {
+    color: white;
 }

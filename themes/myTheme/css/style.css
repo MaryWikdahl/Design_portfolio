@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Linefont:wght@300;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Open+Sans&family=PT+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -310,7 +312,10 @@ template {
   display: none;
 }
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
   max-width: 100%;
 }
 
@@ -328,6 +333,7 @@ body {
 }
 
 .logo img {
+  filter: grayscale(100%);
   height: 10rem;
   max-width: 100%;
   width: 10rem;
@@ -366,9 +372,8 @@ li a {
   transition: color 0.3s;
 }
 
-img {
-  max-height: 20rem;
-  max-width: 20rem;
+.nav a {
+  color: #000 !important;
 }
 
 .footer {
@@ -400,9 +405,9 @@ img {
 .gallery {
   display: grid;
   gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin-bottom: 10rem;
   padding: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .main {
@@ -434,21 +439,21 @@ img {
 }
 
 .embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
   height: 0;
-  overflow: hidden;
   max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
 }
 
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 1600px) {
@@ -484,7 +489,51 @@ img {
   .flash-img {
     grid-template-columns: repeat(1, 1fr);
   }
+  .gallery :nth-child(1) {
+    grid-column: span 1;
+  }
+  .gallery :nth-child(2) {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    grid-column: span 1;
+  }
+  .gallery :nth-child(3) {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    grid-column: span 1;
+  }
+  .gallery :nth-child(4) {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    grid-column: span 1;
+  }
+  .gallery :nth-child(5) {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    grid-column: span 1;
+  }
+  .gallery :nth-child(6) {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    grid-column: span 1;
+  }
 }
+.back-img {
+  height: 70rem;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 300rem;
+  z-index: -1;
+}
+
+.logodesign {
+  font-family: "Fredoka", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.logodesign::first-letter {
+  color: #b0e0af;
+  font-size: 160px;
+}
+
 .landingpage {
   display: grid;
   gap: 20px;
@@ -513,36 +562,43 @@ img {
 
 .landingpage :nth-child(2) {
   background-color: #72b56c;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 3;
 }
 
 .landingpage :nth-child(3) {
   background-color: #a1d69e;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 1;
 }
 
 .landingpage :nth-child(4) {
   background-color: #92cb8d;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 2;
 }
 
 .landingpage :nth-child(5) {
   background-color: #c0ebbf;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 1;
 }
 
 .landingpage :nth-child(6) {
   background-color: #b0e0af;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 2;
 }
 
 .landingpage :nth-child(7) {
   background-color: #c0ebbf;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 2;
 }
 
 .landingpage :nth-child(8) {
   background-color: #d2f2d0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   grid-column: span 1;
 }
 
@@ -594,7 +650,7 @@ blockquote {
 }
 
 code {
-  background: #7aa394;
+  background: #304940;
   border: 1px solid #ccc;
   border-radius: 0.3em;
   color: #fff;
@@ -614,13 +670,25 @@ pre {
 }
 
 pre code {
-  background: transparent;
+  background: #304940;
   border: 0 none;
   display: block;
   line-height: 1.4;
   margin: 0;
   overflow-x: auto;
   padding: 1.1111em 0;
+}
+
+li > a:visited {
+  color: #551A8B;
+}
+
+li > a:link {
+  color: #0000EE;
+}
+
+strong {
+  color: white;
 }
 
 /*!

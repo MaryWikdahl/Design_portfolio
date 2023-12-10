@@ -17,5 +17,5 @@ Analysis
 </div>
 
 <div class="box">
- <a href="analysis/03_design_principles">Design pronciples</a>
+ <a href="analysis/03_design_principles">Design principles</a>
 </div>

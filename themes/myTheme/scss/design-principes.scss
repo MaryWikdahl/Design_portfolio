@@ -1,0 +1,21 @@
+.back-img {
+    height: 70rem;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 300rem;
+    z-index: -1;
+}
+
+.logodesign {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.logodesign::first-letter {
+    color: #b0e0af;
+    font-size: 160px;
+   
+}

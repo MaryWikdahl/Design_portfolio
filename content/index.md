@@ -2,7 +2,7 @@
 Title: Home
 Description: This is our index page.
 ---
-![anonym](%assets_url%/img/anonym.png)
+![anonym](%assets_url%/img/anonym.png?w=400&h=400)
 
 Home page
 ==========================

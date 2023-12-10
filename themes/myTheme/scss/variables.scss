@@ -25,7 +25,8 @@ body {
 }
 
 .logo {
-    img {
+    img { 
+        filter: grayscale(100%);
         height: 10rem;
         max-width: 100%;
         width: 10rem;
@@ -71,11 +72,15 @@ li {
         transition: color 0.3s;
     }
 }
-
-img {
-    max-height: 20rem;
-    max-width: 20rem;
+.nav {
+    a {
+        color: #000 !important;
+    }
 }
+// img {
+//     max-height: 20rem;
+//     max-width: 20rem;
+// }
 
 .footer {
     align-items: center;
